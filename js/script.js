@@ -117,14 +117,27 @@ const colors = [
 // 
 // --------------------------------
 // To Print
-{/*
+/*
 	<div class="icon-element">
     <i class="fas fa-cat"></i>
     <div class="icon-name">Cat</div>
 </div>
-*/}
+*/
 // --------------------------------
 // 
-const printIcons (() => {
+// ---> PRINT FUNCTION <---
+// 
+function printIcon (array) {
+	array.forEach((element) => {
+		const {family, prefix, name} = element;
+		
+		$('#icon-output').append(`
+		<div class="icon-element">
+			<i class="${family} ${prefix}${name}"></i>
+			<div class="icon-name">${name}</div>
+		</div>
+		`);
+	});
+}
 
-});
+printIcon(icons);

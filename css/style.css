@@ -32,10 +32,15 @@ body {
 .flex {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .flex-center {
     justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 /* -------------------------------- */
@@ -58,6 +63,13 @@ body {
     color: #fcfbf9;
     text-transform: uppercase;
     font-size: 21px;
+    padding: 0 20px;
+}
+
+.select-bar select {
+    background-color: #fcfbf9;
+    border: none;
+    padding:5px 20px;
 }
 /* --- End Select Bar --- */
 
@@ -69,7 +81,7 @@ body {
 }
 
 .icon-element {
-    width: calc(100% / 5);
+    width: calc(100% / 5 - 40px);
     padding: 20px;
     text-align: center;
     border: 2px solid #fcfbf9;
